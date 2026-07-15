@@ -1,0 +1,24 @@
+# --- Sensitive: never commit ---
+# Local scratch/output dir — created on demand by the tool. Holds BLE captures
+# (device + nearby MACs, image data), Android bugreports (broad PII), and
+# framebuffer renderings of personal photos. None of it belongs in the repo.
+captures/
+
+# Android bugreports, personal image content (in case they land elsewhere)
+*.zip
+*.jpg
+*.jpeg
+*.png
+
+# --- Vendor binary (copyrighted) and its extraction ---
+*.apk
+extracted/
+
+# --- Reverse-engineering tooling (kept locally, not part of the CLI) ---
+tools/parse_btsnoop.py
+tools/analyze.py
+
+# --- Python env ---
+venv/
+__pycache__/
+*.pyc
